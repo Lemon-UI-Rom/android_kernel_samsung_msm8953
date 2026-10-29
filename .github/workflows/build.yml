@@ -36,7 +36,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: Droidspaces-Samsung-SM-A015G-${{ env.RELEASE_TAG }}
+          name: 4.9.227-Paradigm-MSM8953
           path: dist/*.tar
 
       - name: Create release
