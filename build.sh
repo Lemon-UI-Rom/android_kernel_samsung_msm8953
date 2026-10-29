@@ -31,7 +31,7 @@ if [ -z "$BUILD_VERSION" ]; then
 fi
 cat << EOF > "${KERNEL_ROOT}/arch/arm64/configs/version.config"
 CONFIG_LOCALVERSION_AUTO=n
-CONFIG_LOCALVERSION="-ravindu644-${BUILD_VERSION}"
+CONFIG_LOCALVERSION="-Miracle-10/2026"
 EOF
 
 # download the toolchains if they aren't there yet
@@ -103,7 +103,7 @@ build_vbmeta(){
 build_tar(){
     # Odin-flashable tar
     cd "${KERNEL_ROOT}/dist"
-    tar -cvf "SM-A015G-kernel-${BUILD_VERSION}.tar" boot.img vbmeta.img && \
+    tar -cvf "Miracle-MSM8953.tar" boot.img vbmeta.img && \
         echo -e "\n[INFO]: TAR BUILT SUCCESSFULLY..!\n"
     cd "${KERNEL_ROOT}"
 }
